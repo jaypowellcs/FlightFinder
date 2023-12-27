@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './Shared/header/header.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { FooterComponent } from './Shared/footer/footer.component';
-import { LoginPageComponent } from './Pages/login-page/login-page.component';
+import { LoginPageComponent } from './Pages/home/login-page/login-page.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,6 @@ import { LoginPageComponent } from './Pages/login-page/login-page.component';
     HomeComponent,
     FooterComponent,
     LoginPageComponent,
-  
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
