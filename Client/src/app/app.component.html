@@ -1,8 +1,14 @@
 <body>
-  <div class="main">
-  <app-header></app-header>
-  <app-footer></app-footer>
+  <div class="primary-header">
+    <div class="container">
+      <app-header></app-header>
+    </div>
   </div>
+  <main>
+    <router-outlet></router-outlet>
+    <div class="container">
+      <app-calltoaction></app-calltoaction>
+    </div>
+  </main>
+  <app-footer></app-footer>
 </body>
-
-<router-outlet></router-outlet>

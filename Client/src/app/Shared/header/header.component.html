@@ -1,23 +1,70 @@
-<header>
-  <nav>
-    <div class="nav-logo">
-      <a href="#" class="">
-        <img
-          src="../../../assets/flight-finder-logo.jpg"
-          alt="An image of the FlightFinder logo"
-        />
-      </a>
-    </div>
-
-    <ul class="nav-links">
-      <li class="Home"><a routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-      <li class="About"><a routerLink="/About" routerLinkActive="active" ariaCurrentWhenActive="page" >About</a></li>
-      <li class="Plan"><a routerLink="/Plan" routerLinkActive="active" ariaCurrentWhenActive="page">Plan Travel</a></li>
-      <li class="Contact"><a routerLink="/Contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a></li>
-    </ul>
-    <div class="btn-group">
-      <button class="btn "><a routerLink="/Login-Signup" routerLinkActive="active" ariaCurrentWhenActive="page">Log In</a></button>
-      <button class="btn "><a routerLink="/Login-Signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a></button>
-    </div>
-  </nav>
-</header>
+<div class="nav-logo">
+  <a routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <img
+      src="../../../assets/flight-finder-logo.jpg"
+      alt="An image of the FlightFinder logo"
+    />
+  </a>
+</div>
+<nav class="primary-navigation">
+  <ul role="list" class="nav-list">
+    <li >
+      <a
+        routerLink="/Home"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/About"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >About</a
+      >
+    </li>
+    <li >
+      <a
+        routerLink="/Plan"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Plan Travel</a
+      >
+    </li>
+    <li >
+      <a
+        routerLink="/FAQ"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >FAQ</a
+      >
+    </li>
+    <li >
+      <a
+        routerLink="/Contact"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Contact</a
+      >
+    </li>
+  </ul>
+  <div class="btn-group">
+    <button class="btn">
+      <a
+        routerLink="/Login-Signup"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Log In</a
+      >
+    </button>
+    <button class="btn">
+      <a
+        routerLink="/Login-Signup"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Sign Up</a
+      >
+    </button>
+  </div>
+</nav>
