@@ -1,37 +1,49 @@
-<div class="container-login" id="container-login">
-  <div class="form-container flight-tracker">
-    <form>
-      <div class="flight">
-        <h1>Book</h1>
-        <label class="container"
-          >Round Trip
-          <input type="checkbox" checked="checked" />
-          <span class="checkmark"></span>
-        </label>
+<div class="form-container">
+  <form>
+    <div class="types-container">
+      <h1>Type of Flight</h1>
+      <label class="checkbox-container"
+        >Round Trip
+        <input type="checkbox" checked="checked" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkbox-container"
+        >One Way
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    </div>
 
-        <label class="container"
-          >One Way
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-      </div>
-
-      <div class="form-container sign-in">
+    <div class="locations-container">
+      <div class="locations-search">
         <h1>From</h1>
         <label for="searchbox">Search</label>
-        <input type="search" oninput="liveSearch()" id="searchbox" />
+        <input
+          class="search"
+          type="search"
+          oninput="liveSearch()"
+          id="searchbox"
+        />
       </div>
-      <div class="form-container sign-in">
+
+      <div class="locations-search">
         <h1>To</h1>
         <label for="searchbox">Search</label>
-        <input type="search" oninput="liveSearch()" id="searchbox" />
+        <input
+          class="search"
+          type="search"
+          oninput="liveSearch()"
+          id="searchbox"
+        />
       </div>
+    </div>
 
-      <div class="form-container sign-in">
+    <div class="dates">
+      <div>
         <h1>Depart</h1>
         <label for="start">Start date:</label>
-
         <input
+          class="date-input"
           type="date"
           id="start"
           name="trip-start"
@@ -40,11 +52,12 @@
           max="2018-12-31"
         />
       </div>
-      <div class="form-container sign-in">
+      <div>
         <h1>Return</h1>
         <label for="start">Start date:</label>
 
         <input
+          class="date-input"
           type="date"
           id="start"
           name="trip-start"
@@ -52,9 +65,8 @@
           min="2024-01-01"
           max="2024-12-31"
         />
-
-        <button type="submit">Search</button>
       </div>
-    </form>
-  </div>
+    </div>
+    <button class="btn" type="submit">Search</button>
+  </form>
 </div>
