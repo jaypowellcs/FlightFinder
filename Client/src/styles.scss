@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/*<-------- Font Family --------------->*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/*<-------- Colors --------------->*/
+
+$basecolor: #c8d9ed;
+$secondarycolor: #e1f1fd; 
+$thirdcolor: #c1d8f0;
+$darkcolor: #4663ac;
+$greycolor: #d2deeb;

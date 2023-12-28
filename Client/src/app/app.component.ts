@@ -5,6 +5,7 @@ import { HeaderComponent } from './Shared/header/header.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { LoginPageComponent } from './Pages/home/login-page/login-page.component';
+import { TripFinderComponent } from './Components/trip-finder/trip-finder.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { LoginPageComponent } from './Pages/home/login-page/login-page.component
     HomeComponent,
     FooterComponent,
     LoginPageComponent,
+    TripFinderComponent, 
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

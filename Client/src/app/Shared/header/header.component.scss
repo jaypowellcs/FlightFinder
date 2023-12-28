@@ -1,12 +1,25 @@
-/*<-------- Font Family --------------->*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+/*<-------- Colors --------------->*/
 
-* {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
+$basecolor: #c8d9ed;
+$secondarycolor: #e1f1fd; 
+$thirdcolor: #c1d8f0;
+$darkcolor: #32a1ce;
+$greycolor: #d2deeb;
+$black: #28282B;
+
+
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  top: 0px;
+  border-bottom: thick double #32a1ce;
+  
 }
 
 img {
@@ -17,24 +30,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #030707;
-}
-
-nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  position: fixed;
-  top: 0px;
-  
 }
 
 .nav-logo {
@@ -51,7 +46,8 @@ nav {
 .link a {
   position: relative;
   padding-bottom: 0.75rem;
-  color: #fff;
+  color: $black;
+  font-weight: 900;
 }
 
 .link a::after {
@@ -61,7 +57,7 @@ nav {
   width: 0;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: $darkcolor;
   transition: all 0.3s ease;
 }
 
@@ -72,11 +68,12 @@ nav {
 .btn {
     padding: 1rem 2rem; 
     font-size: 1rem;
-    color: #fff;
-    background-color: black;
+    color: $black;
+    background-color: $darkcolor;
     border-radius: 25px;
     cursor:pointer;
     transition: all 0.3s ease;
+    font-weight: 900;
 }
 
 .btn-group .btn{
@@ -85,6 +82,8 @@ nav {
 
 .btn:hover {
     background-color: white;
+    border: $black;
+    box-shadow: 5px 5px 5px $darkcolor;
 
 }
 
@@ -92,8 +91,19 @@ nav {
   .nav-links {
     display: none;
   }
-  .btn-group {
+ .btn:first-child {
     display: none;
+  }
+  .nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    top: 0px;
+    border-bottom: thick double #32a1ce;
   }
 }
 
