@@ -1,70 +1,104 @@
-<div class="nav-logo">
-  <a routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <img
-      src="../../../assets/flight-finder-logo.jpg"
-      alt="An image of the FlightFinder logo"
-    />
-  </a>
-</div>
-<nav class="primary-navigation">
-  <ul role="list" class="nav-list">
-    <li >
-      <a
-        routerLink="/Home"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Home</a
-      >
-    </li>
-    <li>
-      <a
-        routerLink="/About"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >About</a
-      >
-    </li>
-    <li >
-      <a
-        routerLink="/Plan"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Plan Travel</a
-      >
-    </li>
-    <li >
-      <a
-        routerLink="/FAQ"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >FAQ</a
-      >
-    </li>
-    <li >
-      <a
-        routerLink="/Contact"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Contact</a
-      >
-    </li>
-  </ul>
-  <div class="btn-group">
-    <button class="btn">
-      <a
-        routerLink="/Login-Signup"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Log In</a
-      >
-    </button>
-    <button class="btn">
-      <a
-        routerLink="/Login-Signup"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Sign Up</a
-      >
-    </button>
+<header class="primary-header">
+  <div class="container">
+    <div class="nav-wrapper">
+  <div class="nav-logo">
+    <a
+      routerLink="/Home"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <img
+      class="flight-icon"
+        src="../../../assets/flight-finder-icon.png"
+        alt="An image of the FlightFinder logo"
+      />
+    </a>
   </div>
-</nav>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" (click)="toggleNavbar()" aria-expanded="false">
+      <img
+        class="icon-menu"
+        aria-hidden="true"
+        src="../../../assets/icon-hamburger.svg"
+        alt="Menu Icon"
+      />
+      <img
+        class="icon-close"
+        aria-hidden="true"
+        src="../../../assets/icon-close.svg"
+        alt="Close Icon"
+      />
+      <span class="visually-hidden">Menu</span>
+    </button>
+
+    <nav class="primary-navigation" [ngClass]="showMenu ? 'showMenu' : 'hidden'">
+      <ul
+        aria-label="Primary"
+        role="list"
+        class="nav-list"
+        id="primary-navigation"
+      >
+        <li>
+          <a
+            routerLink="/Home"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/About"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/Plan"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Plan Travel</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/FAQ"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >FAQ</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/Contact"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Contact</a
+          >
+        </li>
+      </ul>
+     
+    </nav>
+    <div class="button-group">
+      <button class="button">
+        <a
+          routerLink="/Login-Signup"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Log In</a
+        >
+      </button>
+      <button class="button">
+        <a
+          routerLink="/Login-Signup"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Sign Up</a
+        >
+      </button>
+    </div>
+     
+  </div>
+</div>
+</header>
