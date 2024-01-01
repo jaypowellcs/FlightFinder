@@ -1,58 +1,58 @@
-<div class="form-container">
-  <form>
-    <div class="locations-container">
-      <div class="locations-search">
-        <h1>From</h1>
-        <label for="searchbox">Search</label>
-        <input
-          class="search"
-          type="search"
-          oninput="liveSearch()"
-          id="searchbox"
-        />
+<div class="container">
+  <div class="form-container">
+    <form>
+      <div class="tracker-form-column">
+        <h1>Find a Flight</h1>
+        <div class="tracker-form-row">
+          <h2>From</h2>
+          <label for="searchbox"></label>
+          <input
+            placeholder="City or Airport"
+            class="search-box"
+            type="search"
+            oninput="liveSearch()"
+            id="searchbox"
+          />
+        </div>
+
+        <div class="tracker-form-row">
+          <h2>To</h2>
+          <label for="search-box"></label>
+          <input
+            placeholder="City or Airport"
+            class="search-box"
+            type="search"
+            oninput="liveSearch()"
+            id="searchbox"
+          />
+        </div>
+
+        <div class="tracker-form-row">
+          <h2>Depart</h2>
+          <label for="searchbox"></label>
+          <input
+            value="2017-06-01"
+            class="search-box"
+            type="date"
+            oninput="liveSearch()"
+            id="searchbox"
+          />
+        </div>
+
+        <div class="tracker-form-row">
+          <h2>Arrival</h2>
+          <label for="search-box"></label>
+          <input
+            class="search-box"
+            type="date"
+            oninput="liveSearch()"
+            id="searchbox"
+          />
+        </div>
+        <button class="button" type="submit">Search</button>
       </div>
 
-      <div class="locations-search">
-        <h1>To</h1>
-        <label for="searchbox">Search</label>
-        <input
-          class="search"
-          type="search"
-          oninput="liveSearch()"
-          id="searchbox"
-        />
-      </div>
-    </div>
-
-    <div class="dates">
-      <div>
-        <h1>Depart</h1>
-        <label for="start">Start date:</label>
-        <input
-          class="date-input"
-          type="date"
-          id="start"
-          name="trip-start"
-          value="2018-07-22"
-          min="2018-01-01"
-          max="2018-12-31"
-        />
-      </div>
-      <div>
-        <h1>Return</h1>
-        <label for="start">Start date:</label>
-
-        <input
-          class="date-input"
-          type="date"
-          id="start"
-          name="trip-start"
-          value="2018-07-22"
-          min="2024-01-01"
-          max="2024-12-31"
-        />
-      </div>
-    </div>
-    <button class="btn" type="submit">Search</button>
-  </form>
+   
+    </form>
+  </div>
 </div>

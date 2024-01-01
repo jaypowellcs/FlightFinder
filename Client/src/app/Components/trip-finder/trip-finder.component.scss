@@ -1,89 +1,91 @@
-
 /*<-------- Colors --------------->*/
-
-$basecolor: #c8d9ed;
-$secondarycolor: #e1f1fd; 
-$thirdcolor: #c1d8f0;
-$darkcolor: #32a1ce;
-$greycolor: #d2deeb;
-$black: #28282B;
 
 .form-container {
   display: flex;
-  flex-direction: row;
-  border: solid $black;
-  border-radius: 5%;
-  width: 45rem;
-  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  border: thick double var(--clr-primary-400);
+  margin: 5rem;
+  padding: .25rem;
 }
 
 h1 {
-  padding: 1rem;
-  font-size: medium; 
-}
-.types-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: last baseline;
-  justify-content: space-between;
-  padding: 1rem; 
+  font-size: var(--fs-800);
 }
 
-.locations-container {
+h2 {
+  padding: var(--size-100);
+  font-size: var(--fs-700);
+}
+.tracker-form-column {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  padding: 1rem;
+}
+
+.tracker-form-row {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   justify-content: space-between;
+  margin: var(--size-200);
+  gap: 5rem;
 }
 
-.search {
-  border: solid $black;
+.search-box {
+  padding: var(--size-100);
 }
 
-.dates {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: last baseline;
-  justify-content: space-between;
-  margin-top: 1em;
+.button {
+  margin-top: var(--size-200);
+  align-self: center;
 }
 
-.date-input {
-  border: solid $black;
+/*---------------Mobile---------------*/
+
+@media (max-width: 50em) {
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    border: thick double black;
+    margin: var(--size-400);
+    justify-content: center;
+    padding: 0; 
+
+    .tracker-form-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .tracker-form-row {
+      display: flex;
+      display: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: var(--fs-700);
+      font-size: var(--fs-400);
+      align-self: center;
+    }
+    h2 {
+      padding: var(--size-200);
+      font-size: var(--fs-600);
+    }
+
+    .search-box {
+      padding: var(--size-100);
+    }
+
+    .button {
+      margin-top: var(--size-200);
+      align-self: center;
+    }
+  }
 }
-
-.checkbox-container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.btn {
-  padding: 1rem 2rem; 
-  margin: 2rem;
-  font-size: 1rem;
-  color: $black;
-  background-color: $darkcolor;
-  border-radius: 25px;
-  cursor:pointer;
-  transition: all 0.3s ease;
-  font-weight: 900;
-}
-
-.btn:hover {
-  background-color: white;
-  border: $black;
-  box-shadow: 5px 5px 5px $darkcolor;
-
-}
-
