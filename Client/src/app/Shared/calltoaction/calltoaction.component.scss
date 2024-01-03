@@ -1,0 +1,26 @@
+.cta {
+    background-color: rgb(33, 178, 189);
+    border-radius: 10%;
+    width: 100%;
+    margin-top: var(--size-800);
+    margin-bottom:  var(--size-800);
+
+}
+
+.even-columns {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.subscribe-input {
+    display: flex;
+    flex-direction: row;
+    gap:var(--size-100);
+    margin-bottom: 1rem;
+  
+}
+
+p {
+    font-size: var(--fs-800);
+}

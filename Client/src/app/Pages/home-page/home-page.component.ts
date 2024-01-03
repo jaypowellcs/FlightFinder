@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TripFinderComponent } from '../../Components/trip-finder/trip-finder.component';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -11,5 +11,5 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-  faGoogle = faGoogle; 
+  faArrowRight = faArrowRight; 
 }

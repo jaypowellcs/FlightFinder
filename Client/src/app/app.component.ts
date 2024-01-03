@@ -11,7 +11,6 @@ import { PlanPageComponent } from './Pages/plan-page/plan-page.component';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { FaqPageComponent } from './Pages/faq-page/faq-page.component';
 //Components 
-import { HomecontentComponent } from './Components/homecontent/homecontent.component';
 import { TripFinderComponent } from './Components/trip-finder/trip-finder.component';
 import { CalltoactionComponent } from './Shared/calltoaction/calltoaction.component';
 
@@ -31,10 +30,8 @@ import { CalltoactionComponent } from './Shared/calltoaction/calltoaction.compon
     PlanPageComponent,
     LoginPageComponent,
     TripFinderComponent, 
-    HomecontentComponent,
     FaqPageComponent, 
     CalltoactionComponent,
-    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
